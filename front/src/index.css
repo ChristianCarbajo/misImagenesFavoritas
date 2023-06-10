@@ -3,12 +3,12 @@
   padding: 0;
 }
 @font-face {
-  font-family: "Cuqui";
-  src: url("./Font/cookies&milk-regular.ttf"); 
+  font-family: "PoiretOne";
+  src: url("./Font/PoiretOne-Regular.ttf"); 
 }
 body {
   background-color: #111112;
-  font-family:"Cuqui";
+  font-family:"PoiretOne";
   letter-spacing:2px;
 }
 a {

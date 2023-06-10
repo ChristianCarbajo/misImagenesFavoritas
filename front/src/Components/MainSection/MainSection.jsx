@@ -6,11 +6,11 @@ import ImageCard from '../ImageCard/ImageCard';
 
 function MainSection() {
 
-  const url = "http://localhost:8080/api/v1/myfavoritesimages"
+  const constUrl = "http://localhost:8080/api/v1/myfavoritesimages"
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    ApiGetService(url)
+    ApiGetService(constUrl)
       .then((data) => setData(data))
       .catch((error) => console.error(error));
   }, []);
@@ -20,7 +20,7 @@ function MainSection() {
   return (
     <div className='mainSection'>
       <div className='addRecipe'>
-        <Link to="/Form"><button className='addRecipeButton'>Añade una receta</button></Link>
+        <Link to="/Form"><button className='addImageButton'>Añade una foto</button></Link>
       </div>
       <div className='mainSection-ImageCards'>
         {data.map((item) => (

@@ -22,7 +22,7 @@
 
 .form button{
     height: 6vh;
-    width: 26vw;
+    width: 35vw;
     margin-top: 5vh;
     background:linear-gradient(to top left, rgb(255, 0, 0),rgb(193, 193, 3));
     border-style:none ;
@@ -36,4 +36,19 @@
     letter-spacing:2px;
     font-size: 4vh;
     
+}
+.return{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+.return-h2{
+    color:antiquewhite;
+}
+.b-return svg{
+    height: 6vh;
+    width: 4vw;
+
 }
