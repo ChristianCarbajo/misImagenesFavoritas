@@ -1,0 +1,39 @@
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form-inputTitle, .form-inputURL{
+    margin-top: 5vh;  
+    color:rgb(245, 204, 179);
+}
+
+.form-inputTitle input,
+.form-inputURL input{
+    height: 3vh;
+    width: 20vw;
+    border-radius: 10px;
+    text-align: center;
+}
+.form-inputTitle p,
+.form-inputURL p{
+    margin-top: 2vh;
+}
+
+
+.form button{
+    height: 6vh;
+    width: 26vw;
+    margin-top: 5vh;
+    background:linear-gradient(to top left, rgb(255, 0, 0),rgb(193, 193, 3));
+    border-style:none ;
+    border-radius: 15px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.form-buttonText{
+    text-decoration: underline;
+    font-family: "Cuqui";
+    letter-spacing:2px;
+    font-size: 4vh;
+    
+}

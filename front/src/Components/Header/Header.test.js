@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import Header from "./Header"
+import { MemoryRouter } from 'react-router-dom';
 
 
 
@@ -8,8 +9,11 @@ describe ('Header', ()=>{
       expect(typeof Header).toBe('function')
     })
     it('should render an h1 element', () => {
-      render(<Header />);
-      const headingElement = screen.getByRole('heading', { level: 1 });
+      render(
+      <MemoryRouter>
+      <Header />
+      </MemoryRouter>);
+      const headingElement = screen.getByText('Mis fotos Cuquis',{ query: 'h1' })
       expect(headingElement).toBeInTheDocument();
     });
   });

@@ -1,26 +1,8 @@
-.container{
-    display: flex;
-    flex-direction: column;
-}
-.mainSection-inputTitle, .mainSection-inputURL{
-    margin-top: 5vh;  
-    color:rgb(245, 204, 179);
-}
-
-.mainSection-inputTitle input,
-.mainSection-inputURL input{
-    height: 3vh;
-    width: 20vw;
-    border-radius: 10px;
-    text-align: center;
-}
-.mainSection-inputTitle p,
-.mainSection-inputURL p{
-    margin-top: 2vh;
-}
 
 
-.mainSection button{
-    height: 5vh;
-    margin-top: 5vh;
+.mainSection-ImageCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 5vh 10vw 5vh 10vw;
 }

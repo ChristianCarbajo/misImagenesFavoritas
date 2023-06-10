@@ -1,18 +1,25 @@
-import logo from './logo.svg';
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import './App.css';
-import Header from './Components/Header/Header';
-import MainSection from './Components/MainSection/MainSection';
+import MainPage from '../src/View/MainPage/MainPage'
+import FormPage from '../src/View/FormPage/FormPage'
 
 
 
 
 function App() {
-  return(
-    <div className="App">
-      <Header/>
-      <MainSection/>
-    </div>
- 
-)}
+  const router = createBrowserRouter([{
+    path: "/",
+     element: <MainPage />
+  }, {
+      path: "/form",
+      element: <FormPage />   
+}]);
+    return (
+    
+      <div className="App" data-testid="app-component">     
+            <RouterProvider router={router} />
+      </div>
+    );
+}
 
 export default App;
