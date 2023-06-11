@@ -5,7 +5,7 @@
         <li>Desarrollo</li>
         <li>Presentación</li>
         <li>Stacks utilizados</li>
-        <li>Como instalarlo</li>
+        <li>Cómo instalarlo</li>
 </ul>
 
 ## 📝 1. Descripción del Proyecto
@@ -22,8 +22,8 @@ Todo ello apoyado con una cobertura de test basados en TDD. Desde el front utili
 
 ## ✏️ 2. Desarrollo
 
-Se comenzó a montar la idea de la prueba en figma de manera muy simple. Una vez sabía qué era lo que quería mostrar y cómo, busqué ejemplos de redes sociales de imágenes para inspirarme en sus colores principales. Cuando ya estaba todo estructurado y sabía que era lo que quería mostar a nivel visual, comencé a organizar el front en componentes, servicios y vistas. Más tarde comencé con el proceso TDD comprobando en todos los componentes que todos eran una función, para luego crear la función en si. Así fuí desarrollando, poco a poco, lo que sería el front. Cuando lo básico estaba programado, comencé con el back, donde, siguiendo el criterio MVC, realicé el CRUD con un soporte de test del 100%.
-Una vez la API fue funcional y el front la consumía sin problemas, fui mejorando los estilos, incorporando el tipo de letra y, en definitiva, todo los relacionado con UI/UX 
+Se comenzó a montar la idea en figma de manera muy esquemática. Una vez sabía qué era lo que quería mostrar y cómo, busqué ejemplos de redes sociales de imágenes para inspirarme en sus colores principales. Cuando ya estaba todo estructurado y sabía qué era lo que quería mostar a nivel visual, comencé a organizar el front en componentes, servicios y vistas. Más tarde comencé con el proceso TDD comprobando en todos los componentes que todos eran una función, para luego crear la función en si. Así fuí desarrollando, poco a poco, lo que sería el front. Cuando lo básico estaba programado, comencé con el back, donde, siguiendo el criterio MVC, realicé el CRUD con un soporte de test del 100%.
+Una vez la API fue funcional y el front la consumía sin problemas, fui mejorando los estilos, incorporando el tipo de letra y, en definitiva, todo lo relacionado con UI/UX 
 
 ## 🧑‍💻 3. Presentación
 
@@ -81,7 +81,7 @@ BACK-END
 
 1. Clonar el proyecto
 ```bash
-git https://github.com/ChristianCarbajo/misImagenesFavoritas.git
+git clone https://github.com/ChristianCarbajo/misImagenesFavoritas.git
 ```
 2. Activar el servidor y dejar el terminal abierto
 ```bash
@@ -95,7 +95,7 @@ clicar Run (Shift + F10)
 FRONT-END
 1. Clonar el proyecto
 ```bash
-git https://github.com/ChristianCarbajo/misImagenesFavoritas.git
+git clone https://github.com/ChristianCarbajo/misImagenesFavoritas.git
 ```
 
 2. Acceder a la carpeta del proyecto
@@ -112,7 +112,7 @@ npm install
 ```bash
 npm start
 ```   
-En caso de que de un error de falta de scripts, poner este comando npm install react-scripts --save
+En caso de que de un error de falta de scripts, poner este comando
 ```bash
 npm install react-scripts --save
 ```  
