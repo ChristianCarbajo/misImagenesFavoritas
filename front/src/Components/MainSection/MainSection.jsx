@@ -19,8 +19,8 @@ function MainSection() {
 
   return (
     <div className='mainSection'>
-      <div className='addRecipe'>
-        <Link to="/Form"><button className='addImageButton'>Añade una foto</button></Link>
+      <div className='addImage'>
+        <Link to="/Form"><span className='addImageSpan'>Añade una foto</span></Link>
       </div>
       <div className='mainSection-ImageCards'>
         {data.map((item) => (

@@ -3,11 +3,11 @@ import Header from "../../Components/Header/Header"
 
 
 
-function FormPage (){
-    return(
+function FormPage() {
+    return (
         <div data-testid="formPage-component">
-           <Header/>
-           <Form/> 
+            <Header />
+            <Form />
         </div>
     )
 }

@@ -1,4 +1,4 @@
-.confirmation{
+.confirmation {
     display: flex;
     position: fixed;
     top: 0;
@@ -11,11 +11,11 @@
     z-index: 5;
 }
 
-.confirmation{
+.confirmation {
     background-color: rgba(0, 0, 0, 0.279);
 }
 
-.confirmation-div{
+.confirmation-div {
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     padding: 5vh;
@@ -27,14 +27,14 @@
     z-index: 10;
 }
 
-.confirmation-buttons{
+.confirmation-buttons {
     display: flex;
     justify-content: center;
     gap: 2vw;
     margin-top: 2.5vh;
 }
 
-.action-button{
+.action-button {
     padding: 1vh 2vh 1vh 2vh;
     border-radius: 5%;
     border-style: none;
@@ -43,11 +43,11 @@
     cursor: pointer;
 }
 
-.close-button{
+.close-button {
     padding: 1vh 2vh 1vh 2vh;
     border-style: none;
     border-radius: 5%;
-    background-color: #dd3333;    
+    background-color: #dd3333;
     color: white;
     cursor: pointer;
 }

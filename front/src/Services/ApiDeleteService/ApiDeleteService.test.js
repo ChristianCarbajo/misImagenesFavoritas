@@ -8,8 +8,8 @@ const consoleLogSpy = jest.spyOn(console, 'log');
 
 
 
-describe ('ApiDeleteService', ()=>{
-  it('should be a async function', ()=>{
+describe('ApiDeleteService', () => {
+  it('should be a async function', () => {
     expect(typeof ApiDeleteService).toBe('function')
   })
   it('should have try-catch', async () => {
@@ -21,7 +21,7 @@ describe ('ApiDeleteService', ()=>{
 
     // Ejecutar la función ApiDeleteService
     await ApiDeleteService(url, id);
-   
+
     // Verificar que axios.delete fue llamada con los argumentos correctos
     expect(axios.delete).toHaveBeenCalledWith(`${url}/delete/${id}`);
 

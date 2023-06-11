@@ -7,7 +7,7 @@ function Header() {
 
         <div>
             <Link to='/'><div className="header">
-                <h1>Mis fotos Cuquis</h1>
+                <h1>Mis fotos favoritas</h1>
             </div></Link>
             <div className="header-barBlack"></div>
         </div>

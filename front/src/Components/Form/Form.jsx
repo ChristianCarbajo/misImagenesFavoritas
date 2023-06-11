@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useLocation, Link } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
 import { IoMdReturnLeft } from "react-icons/io";
@@ -14,7 +14,7 @@ function Form() {
     const State = useLocation().state
 
     let [isSubmitted, setIsSubmitted] = useState(false)
-    let [item, setItem] = useState(State ? State : {title: "", url: ""})
+    let [item, setItem] = useState(State ? State : { title: "", url: "" })
 
 
 
@@ -37,7 +37,7 @@ function Form() {
         State ? ApiPutService(constUrl, item, State.id) : ApiPostService(constUrl, item)
         notify()
         setIsSubmitted(true);
-          
+
     }
 
 
@@ -50,17 +50,17 @@ function Form() {
                     <h2 className='return-h2'>Volver a la página de inicio</h2>
                     <Link to="/"><button className='b-return'><IoMdReturnLeft /></button></Link>
                 </div> :
-            <form onSubmit={handleSubmit} method="post">
-                <div className='form-inputTitle'>
-                    <input type="text" name='title' placeholder='TITLE' onChange={handleChange} defaultValue={State ? State.title : ""}  autoComplete="off" required />
-                    <p>Escribe aquí tu Cuqui Título</p>
-                </div>
-                <div className='form-inputURL'>
-                    <input type="url" name="url" onChange={handleChange} defaultValue={State ? State.url : ""} autoComplete="off" placeholder="URL" required pattern="https?://.+" />
-                    <p>Pon la Url de la foto Aquí</p>
-                </div>
-                <button><span className='form-buttonText'>Pulsa aquí para subir tu foto</span></button>
-            </form>}
+                <form onSubmit={handleSubmit} method="post">
+                    <div className='form-inputTitle'>
+                        <input type="text" name='title' placeholder='TITLE' onChange={handleChange} defaultValue={State ? State.title : ""} autoComplete="off" required />
+                        <p>Escribe aquí tu Cuqui Título</p>
+                    </div>
+                    <div className='form-inputURL'>
+                        <input type="url" name="url" onChange={handleChange} defaultValue={State ? State.url : ""} autoComplete="off" placeholder="URL" required pattern="https?://.+" />
+                        <p>Pon la Url de la foto Aquí</p>
+                    </div>
+                    <button><span className='form-buttonText'>Pulsa aquí para subir tu foto</span></button>
+                </form>}
         </div>
     )
 }

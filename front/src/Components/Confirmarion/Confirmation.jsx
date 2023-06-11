@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Confirmation.css";
 
-function Confirmation({ type, handleAction, handleClose}) {
+function Confirmation({ type, handleAction, handleClose }) {
 
     return (
         <div className='confirmation'>
