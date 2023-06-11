@@ -89,7 +89,7 @@ cd back
 ```
 3. Activar el servidor y dejar el terminal abierto
 ```bash
-Situarse en el archivo BackClubAtletismoVillaviciosaApplication.java y clicar Run (Shift + F10)
+clicar Run (Shift + F10)
 ```
 
 FRONT-END
