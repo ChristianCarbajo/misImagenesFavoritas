@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: "PoiretOne";
-  src: url("./Font/PoiretOne-Regular.ttf"); 
+  src: url("./assets/Font/PoiretOne-Regular.ttf"); 
 }
 body {
   background-color: #111112;
